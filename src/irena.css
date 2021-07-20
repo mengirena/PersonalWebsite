@@ -1,7 +1,9 @@
 @import 'index.css';
 
 span {
-    position:relative;
+    position:absolute;
+    margin: 0;
+    padding: 0;
     left: 0;
     transition: all 5s;
 }
@@ -34,7 +36,7 @@ span {
     height: 300px;
     top: 12%;
     left: 12%;
-    transition: all 4s;
+    transition: top 4s, left 4s, line-height 4s, width 8s;
 }
 
 .frame1, .frame2 {
