@@ -24,8 +24,11 @@ html {
     height: 100%;
 }
 
-html body {
+body {
     margin: 0;
     min-height: 100%;
-    background: var(--clr-primary)
+    background: var(--clr-primary);
+    font-family: monda;
+    font-size: 62.5%;
+    overflow:hidden;
 }

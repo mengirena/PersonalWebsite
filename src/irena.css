@@ -1,0 +1,61 @@
+@import 'index.css';
+
+span {
+    position:relative;
+    left: 0;
+    transition: all 5s;
+}
+
+.letter-group-IR {
+    letter-spacing: 8px;
+}
+
+.letter-group-EN {
+    letter-spacing: 20px;
+    top: 3.6rem;
+}
+
+.letter-group-A {
+    letter-spacing: 20px;
+    top: 7.2rem;
+}
+
+.letter-group-C {
+    top: 10.8rem;
+}
+
+.Irena {
+    font-weight:var(--fw-bold);
+    font-size: 3.2rem;
+    color: var(--clr-egg);
+    text-align: left;
+    position: absolute;
+    width:80px;
+    height: 300px;
+    top: 12%;
+    left: 12%;
+    transition: all 4s;
+}
+
+.frame1, .frame2 {
+    position:absolute;
+    width:100%;
+    height: 100%;
+    top:-90%;
+}
+
+.frame1 {
+    border-bottom: 2.5px solid var(--clr-light);
+    border-top: 2.5px solid var(--clr-light);
+    transition: top 4s, height 4.5s;
+}
+
+.frame2 {
+    border-left: 2.5px solid var(--clr-light);
+    top: 0;
+    left: 8%;
+}
+
+.frame2 {
+    transition: left 8s;
+}
