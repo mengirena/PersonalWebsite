@@ -12,12 +12,8 @@
     --fw-normal: 400;
     --fw-bold: 700;
     --fw-black: 900;
-    --grid: 
-    minmax(1em, 10%) 
-    minmax(10rem, 22ch) 
-    minmax(10rem, 23ch) 
-    minmax(1em, 3fr)
-    max-content ;
+    --grid-about-col: 30% 70%;
+    --grid-about-row: repeat(11, 1fr);
 }
 
 html {
@@ -28,7 +24,7 @@ body {
     margin: 0;
     min-height: 100%;
     background: var(--clr-primary);
-    font-family: monda;
     font-size: 62.5%;
     overflow:hidden;
+    font-family: 'Monda', sans-serif;
 }
