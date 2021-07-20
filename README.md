@@ -15,3 +15,5 @@ document.querySelector(".letter-group-IR").getBoundingClientRect().width
 let viewportHeight = window.innerHeight;
 let viewportWidth = window.innerWidth;
 ```
+
+* images used by .css files inside src should be saved under the same folder
