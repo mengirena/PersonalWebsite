@@ -1,0 +1,16 @@
+.navbar {
+    width: 100%;
+    position:fixed;
+    bottom:0;
+
+}
+
+.icon-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding: 5vh 0 ;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
