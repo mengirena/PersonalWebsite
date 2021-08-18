@@ -1,5 +1,5 @@
 import React, {useEffect} from "react"
-import "./irena.css"
+import "./Irena.css"
 
 function Irena(){
     function moveGrid(){

@@ -1,4 +1,4 @@
-@import './index.css';
+/* @import '../index.css'; */
 
 
 .container {
@@ -18,7 +18,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / 12;
     content:"";
-    background: url("../src/avatar.png") no-repeat center/contain;
+    background: url("../avatar.png") no-repeat center/contain;
 }
 
 .name, .role, p {
@@ -27,7 +27,7 @@
     font-size: 1.25rem;
     grid-column: 2 / 3;
     align-self:center;
-    color: var(--clr-light);
+    color: var(--clr-super-light);
 }
 
 .name {
