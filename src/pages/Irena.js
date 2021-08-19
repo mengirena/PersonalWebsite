@@ -8,7 +8,7 @@ function Irena(){
         const irena = document.querySelector(".Irena")
         frameOne.style.top = "40vh"
         frameOne.style.height = "6rem"
-        frameTwo.style.left = "110vw"
+        frameTwo.style.left = "140vw"
         frameTwo.style.opacity = "0"
         irena.style.width = "251px"
         irena.style.height = "6rem"
