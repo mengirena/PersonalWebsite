@@ -56,8 +56,5 @@ span {
     border-left: 2.5px solid var(--clr-light);
     top: 0;
     left: 8%;
-}
-
-.frame2 {
-    transition: left 8s;
+    transition: opacity 6s ease-in, left 8s;
 }
