@@ -1,36 +1,55 @@
-import React, {useEffect} from "react"
+import React, {useState, useEffect} from "react"
 import "./Irena.css"
 
 function Irena(){
     function moveGrid(){
-        document.querySelector(".frame1").style.top = "40vh"
-        document.querySelector(".frame1").style.height = "6rem"
-        document.querySelector(".frame2").style.left = "110vw"
-        document.querySelector(".Irena").style.width = "251px"
-        document.querySelector(".Irena").style.height = "6rem"
-        document.querySelector(".Irena").style.top = "40vh"
-        document.querySelector(".Irena").style.left = `${(window.innerWidth-251)/2}px`
-        console.log(typeof(window.innerWidth))
-        document.querySelector(".Irena").style["line-height"] = "6rem"
-
-        const irWidth = document.querySelector(".letter-group-IR").getBoundingClientRect().width
-
-        document.querySelector(".letter-group-EN").style.left = `${irWidth}px`
-        document.querySelector(".letter-group-EN").style.top = "0%"
-        document.querySelector(".letter-group-EN").style["letter-spacing"] = "8px"
-        const enWidth = document.querySelector(".letter-group-EN").getBoundingClientRect().width
-
-        document.querySelector(".letter-group-A").style["letter-spacing"] = "8px"
-        document.querySelector(".letter-group-A").style.left = `${irWidth + enWidth - 27}px`
-        document.querySelector(".letter-group-A").style.top = "0%"
-        const aWidth = document.querySelector(".letter-group-A").getBoundingClientRect().width
-
-        document.querySelector(".letter-group-C").style.left = `${irWidth + enWidth + aWidth -36 + 12}px`
-        document.querySelector(".letter-group-C").style.top = "0%"
+        const frameOne = document.querySelector(".frame1")
+        const frameTwo = document.querySelector(".frame2")
+        const irena = document.querySelector(".Irena")
+        frameOne.style.top = "40vh"
+        frameOne.style.height = "6rem"
+        frameTwo.style.left = "110vw"
+        frameTwo.style.opacity = "0"
+        irena.style.width = "251px"
+        irena.style.height = "6rem"
+        irena.style.top = "40vh"
+        irena.style.left = `${(window.innerWidth-251)/2}px`
+        irena.style["line-height"] = "6rem"
     }
 
-    useEffect(()=> setTimeout(moveGrid, 500)
-    ,[]);
+    function moveLetters() {
+        const letterGroupEN = document.querySelector(".letter-group-EN")
+        const letterGroupA = document.querySelector(".letter-group-A")
+        const letterGroupC = document.querySelector(".letter-group-C")
+        const irWidth = document.querySelector(".letter-group-IR").getBoundingClientRect().width
+        const enWidth = 89
+        const aWidth = 46
+        letterGroupEN.style.left = `${irWidth}px`
+        letterGroupEN.style.top = "0%"
+        letterGroupEN.style["letter-spacing"] = "8px"
+        letterGroupA.style.left = `${irWidth + enWidth}px`
+        letterGroupA.style.top = "0%"
+        letterGroupA.style["letter-spacing"] = "8px"
+        letterGroupC.style.left = `${irWidth + enWidth + aWidth + 12}px`
+        letterGroupC.style.top = "0%"
+    }
+
+
+    const [dimensions, setDimensions] = useState({width:window.innerWidth,height:window.innerHeight})
+
+    useEffect(()=>{
+        window.addEventListener("resize", () => setDimensions({width:window.innerWidth,height:window.innerHeight}))
+    },[])
+
+    useEffect(()=> {
+        const setId = setTimeout(moveGrid, 100)
+        const setIdLetter = setTimeout(moveLetters,500)
+        return () => {
+            clearTimeout(setId)
+            clearTimeout(setIdLetter)
+        }
+    }
+    ,[dimensions]);
 
     return(
         <main>
