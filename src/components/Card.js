@@ -5,7 +5,7 @@ function Card(props) {
         <>
             <li className="card-item">
                 <a className="card-item-link" href={props.url}>
-                    <figure>
+                    <figure className="card-img-holder">
                         <img src={props.imgDir} alt="" className="card-item-img"/>
                     </figure>
                     <div className="card-item-info">
