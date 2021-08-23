@@ -6,6 +6,7 @@ function Irena(){
         const frameOne = document.querySelector(".frame1")
         const frameTwo = document.querySelector(".frame2")
         const irena = document.querySelector(".Irena")
+        const navBar = document.querySelector(".navbar")
         frameOne.style.top = "40vh"
         frameOne.style.height = "6rem"
         frameTwo.style.left = "140vw"
@@ -15,6 +16,7 @@ function Irena(){
         irena.style.top = "40vh"
         irena.style.left = `${(window.innerWidth-251)/2}px`
         irena.style["line-height"] = "6rem"
+        navBar.style.background = "var(--clr-primary)"
     }
 
     function moveLetters() {

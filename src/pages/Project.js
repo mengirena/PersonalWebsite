@@ -27,7 +27,12 @@ function Projects(){
                             subtitle="Sneaker Sales Landing page"
                             content=""
                         />
-                        
+                        <Card 
+                            url="https://sneaker-sales.netlify.app"
+                            imgDir= "/images/sneaker-landing.png"
+                            subtitle="Sneaker Sales Landing page"
+                            content=""
+                        />
                     </ul>
                 </div>
             </div>

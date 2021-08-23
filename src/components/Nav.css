@@ -6,7 +6,7 @@
     min-height: 80px;
     position:fixed;
     bottom:0;
-    background: var(--clr-primary);
+    transition: all 20s;
 
 }
 
