@@ -10,13 +10,24 @@ function Projects(){
                 <div className="cards-wrapper">
                     <ul className="cards">
                         <Card 
+                            url="https://travelfunservice.netlify.app"
+                            imgDir= "/images/travel-fun.png"
+                            subtitle="Traveling Service Landing page"
+                            content=""
+                        />
+                        <Card 
+                            url="https://mountainrecreation.netlify.app"
+                            imgDir= "/images/mountain-recreation.png"
+                            subtitle="Mountain recreation Landing page"
+                            content=""
+                        />
+                        <Card 
                             url="https://sneaker-sales.netlify.app"
                             imgDir= "/images/sneaker-landing.png"
                             subtitle="Sneaker Sales Landing page"
                             content=""
                         />
-                        <Card />
-                        <Card />
+                        
                     </ul>
                 </div>
             </div>
