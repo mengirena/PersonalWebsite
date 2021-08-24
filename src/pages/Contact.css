@@ -1,0 +1,55 @@
+label > * {
+    display: block;
+    width: 40%;
+    padding: 8px;
+    outline: none;
+    border: none;
+    margin-top: 4px;
+    border-radius: 2px;
+    color: gray;
+}
+
+::placeholder {
+    font-family: 'Monda', sans-serif;
+    font-size: 1rem;
+    color:var(--clr-light);
+}
+
+.form-fill {
+    display: flex;
+    flex-flow: column;
+    justify-content:flex-start;
+    align-items: stretch;
+}
+
+button {
+    width: 40%;
+    font-family: 'Monda', sans-serif;
+    background: var(--clr-light);
+    border: none;
+    border-radius: 2px;
+    font-weight: var(--fw-bold);
+    padding: 4px;
+    margin-top:10px;
+    text-transform: uppercase;
+    color: var(--clr-black);
+    transition: all .3s linear;
+}
+
+button:hover {
+    box-shadow: 0 3px 10px rgba(255, 226, 183, 0.4);
+    -webkit-filter: drop-shadow(0 3px 10px rgba(255, 226, 183, 0.017));
+    filter: drop-shadow(0 3px 10px rgba(255, 226, 183, 0.017));
+    
+}
+
+.left-form{
+}
+
+.left-form::after {
+    content: "";
+    height: 70%;
+    position: relative;
+    top: 0%;
+    border: 2px solid black;
+}

@@ -1,6 +1,6 @@
 .container-project {
     width: 80vw;
-    height: 82vh;
+    height: 80vh;
     margin: 9vh auto 0;
     overflow:scroll;
 }
@@ -27,9 +27,9 @@
     aspect-ratio: 100/ 120;
     text-decoration: none;
     background: var(--clr-super-light);
-    box-shadow: 0 6px 20px rgba(255, 226, 183, 0.4);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(255, 226, 183, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(255, 226, 183, 0.017));
+    box-shadow: 0 3px 10px rgba(255, 226, 183, 0.4);
+    -webkit-filter: drop-shadow(0 3px 10px rgba(255, 226, 183, 0.017));
+    filter: drop-shadow(0 3px 10px rgba(255, 226, 183, 0.017));
     border-radius: 8px;
     overflow: hidden;
     transition: transform .3s linear;
