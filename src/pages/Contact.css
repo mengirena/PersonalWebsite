@@ -1,8 +1,9 @@
 .form-fill {
     display: flex;
     flex-flow: column;
-    justify-content:flex-start;
-    align-items: stretch;
+    justify-content:center;
+    align-items: center;
+
 }
 
 .contact-form{
@@ -94,6 +95,15 @@ input:focus::placeholder,textarea:focus::placeholder {
     color: rgb(100,100,100);
 }
 
+.button, .contact-role {
+    padding: 0px;
+    text-align: center;
+}
+
+.contact-role{
+    text-align: center;
+}
+
 button {
     width: 90%;
     max-width:530px;
@@ -115,6 +125,32 @@ button:hover {
     box-shadow: 0 3px 10px rgba(255, 226, 183, 0.4);
     -webkit-filter: drop-shadow(0 3px 10px rgba(255, 226, 183, 0.017));
     filter: drop-shadow(0 3px 10px rgba(255, 226, 183, 0.017));
-    
 }
 
+.left-form > h3 {
+    text-align: center;
+    padding: 0;
+}
+
+@media screen and (max-width: 660px) {
+    .contact-form{
+        flex-direction: column;
+    }
+
+    .left-form, .right-contact {
+        width: 80%;
+        margin: auto;
+        padding-top:10px;
+    }
+
+    .left-form::after {
+        content: "";
+        height: 0;
+        width: 0;
+        border: 0;
+    }
+
+    .social-icons, .footer-logo {
+        margin-top: 10px;
+    }
+}

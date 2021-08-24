@@ -13,7 +13,7 @@ function Contact() {
                 <h1 className="name">Get in Touch</h1>
                 <section className="contact-form">
                     <div className="left-form">
-                        <h3 className="role">Drop me a line...</h3>
+                        <h3 className="role">Drop me a line</h3>
                         <form name="contact personal" method="post" data-netlify="true" onSubmit="submit">
                             <input type="hidden" name="form-name" value="contact personal" />
                             <div className="form-fill">
@@ -24,14 +24,14 @@ function Contact() {
                                 <label htmlFor="message">
                                 <textarea name="message" placeholder="Message for Me" style={{height:"10rem",border:"2px solid var(--clr-egg)"}} onfocus="this.placeholder = ''"></textarea></label>
                             </div>
-                            <p>
+                            <p className="button">
                                 <button type="submit">Send</button>
                             </p>
                         </form>                                 
                     </div>
 
                     <div className="right-contact">
-                        <h3 className="role">Connect with me</h3>
+                        <h3 className="role contact-role">Connect with me</h3>
                         <div className='social-media-wrap'>
                             <div className='social-icons'>
                                 <a
