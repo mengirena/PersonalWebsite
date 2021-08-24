@@ -6,7 +6,7 @@ function Irena(){
         const frameOne = document.querySelector(".frame1")
         const frameTwo = document.querySelector(".frame2")
         const irena = document.querySelector(".Irena")
-        const navBar = document.querySelector(".navbar")
+        // const navBar = document.querySelector(".navbar")
         frameOne.style.top = "40vh"
         frameOne.style.height = "6rem"
         frameTwo.style.left = "140vw"
@@ -37,7 +37,7 @@ function Irena(){
     }
 
     const [dimensions, setDimensions] = useState({width:window.innerWidth,height:window.innerHeight})
-    const [isOpaque, setOpacity] = useState({opaque:true})
+    // const [isOpaque, setOpacity] = useState({opaque:true})
 
     useEffect(()=>{
         window.addEventListener("resize", () => setDimensions({width:window.innerWidth,height:window.innerHeight}))
