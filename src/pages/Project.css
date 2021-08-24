@@ -6,6 +6,10 @@
     overflow:scroll;
 }
 
+.container-project > h1 {
+    text-align:center;
+}
+
 .cards-wrapper {
     margin: 2rem .5em;
 }
@@ -21,6 +25,7 @@
     width: 30% ;
     min-width: 270px;
     margin: 0 1% 30px;
+    border-radius: 8px;
 }
 
 .card-item-link {
@@ -34,8 +39,6 @@
     border-radius: 8px;
     overflow: hidden;
     transition: transform .3s linear;
-    
-
 }
 
 .card-item-link:hover {
@@ -75,21 +78,10 @@
     font-weight: var(--fw-bold);
 }
 
+@media screen and (max-width:1100px) {
+    .cards {
+        justify-content: space-evenly;
+    }
 
-/* 
-<main>
-    <div className="container-project">
-      <h1 className="name">Businesses I've helped</h1>
-        <div className="cards-wrapper">
-            <ul className="cards">
-                <li className="card-item">
-                    <Link className="card-item-link">
-                        <img className="card-item-img" src="/images/sneaker-landing.png" alt="" />
-                        <div className="card-item-info"></div>
-                    </Link>
-                </li>
-            </ul>
-        </div>
-    </div>
-</main> 
-*/
+
+}

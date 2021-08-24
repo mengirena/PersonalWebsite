@@ -9,7 +9,7 @@ function Projects(){
         <Link to="/"><i className="fas fa-moon logo"></i></Link>
         <main>
             <div className="container-project">
-                <h1 className="name">Businesses I've helped</h1>
+                <h1 className="name">Businesses I helped</h1>
                 <div className="cards-wrapper">
                     <ul className="cards">
                         <Card 
@@ -22,6 +22,12 @@ function Projects(){
                             url="https://mountainrecreation.netlify.app"
                             imgDir= "/images/mountain-recreation.png"
                             subtitle="Mountain recreation Landing page"
+                            content=""
+                        />
+                        <Card 
+                            url="https://sneaker-sales.netlify.app"
+                            imgDir= "/images/sneaker-landing.png"
+                            subtitle="Sneaker Sales Landing page"
                             content=""
                         />
                         <Card 
