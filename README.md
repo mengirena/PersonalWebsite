@@ -17,3 +17,12 @@ let viewportWidth = window.innerWidth;
 ```
 
 * images used by .css files inside src should be saved under the same folder
+
+
+### 
+
+```
+input:focus::placeholder,textarea:focus::placeholder {
+    visibility: hidden;
+}
+```

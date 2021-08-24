@@ -1,20 +1,3 @@
-label > * {
-    display: block;
-    width: 40%;
-    padding: 8px;
-    outline: none;
-    border: none;
-    margin-top: 4px;
-    border-radius: 2px;
-    color: gray;
-}
-
-::placeholder {
-    font-family: 'Monda', sans-serif;
-    font-size: 1rem;
-    color:var(--clr-light);
-}
-
 .form-fill {
     display: flex;
     flex-flow: column;
@@ -22,17 +5,109 @@ label > * {
     align-items: stretch;
 }
 
-button {
-    width: 40%;
+.contact-form{
+    display: flex;
+    justify-content: space-evenly;
+    position:relative;
+}
+
+.left-form, .right-contact {
+    width: 60%;
+    padding-top:20px;
+}
+
+.right-contact {
+    display:flex;
+    flex-direction: column;
+    width: 38%;
+    justify-content: center;
+}
+
+.left-form::after {
+    content: "";
+    height: 70%;
+    position: absolute;
+    top: 5rem;
+    left: 60%;
+    border-right: 1.5px dashed var(--clr-super-light);
+}
+
+.social-media-wrap {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+.footer-logo{
+    margin-top: 20px;
+    font-size: .75rem;
+}
+
+.social-logo {
+    font-size: .75rem;
+    text-decoration: none;
+    color: var(--clr-egg);
+}
+
+.social-icon-link {
+    padding: 8px;
+    color: var(--clr-super-light);
+}
+
+.website-rights {
+    margin-top: 10px;
+    font-size: .7rem;
+}
+
+label {
+    width: 90%;
+    max-width:530px;
+}
+
+label > * {
+    display: block;
+    width:100%;
+    padding: 16px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--clr-egg);
+    margin-top: 4px;
+    border-radius: 2px;
+    color: black;
+    background: var(--clr-egg);
+    opacity: .7;
+    font-size: 1rem;
+}
+
+input:focus::placeholder,textarea:focus::placeholder {
+    visibility: hidden;
+}
+
+::placeholder {
     font-family: 'Monda', sans-serif;
-    background: var(--clr-light);
+    font-size: 1rem;
+    color: rgb(100,100,100);
+}
+
+button {
+    width: 90%;
+    max-width:530px;
+    font-family: 'Monda', sans-serif;
+    background: var(--clr-super-light);
     border: none;
     border-radius: 2px;
     font-weight: var(--fw-bold);
-    padding: 4px;
-    margin-top:10px;
+    padding: 8px;
+    margin-top: 10px;
     text-transform: uppercase;
     color: var(--clr-black);
+    opacity: .7;
+    font-size: 1rem;
     transition: all .3s linear;
 }
 
@@ -43,13 +118,3 @@ button:hover {
     
 }
 
-.left-form{
-}
-
-.left-form::after {
-    content: "";
-    height: 70%;
-    position: relative;
-    top: 0%;
-    border: 2px solid black;
-}

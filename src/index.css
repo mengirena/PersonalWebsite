@@ -1,3 +1,4 @@
+@import url("https://use.fontawesome.com/releases/v5.13.1/css/all.css");
 *,
 *::before,
 *::after {
@@ -39,4 +40,16 @@ body {
     font-size: 62.5%;
     overflow:hidden;
     font-family: 'Monda', sans-serif;
+}
+
+.logo{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size:large;    
+    color: var(--clr-egg);
+    display:block;
+    position:absolute;
+    top: 4vh;
+    left: 11vw;
+    opacity: .8;
 }

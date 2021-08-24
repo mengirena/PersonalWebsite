@@ -1,8 +1,12 @@
 import React from "react"
 import './About.css'
+import { Link } from 'react-router-dom'
+
 
 function About(){
     return(
+        <>
+        <Link to="/"><i className="fas fa-moon logo"></i></Link>
         <main>
             <div className="container">
                 <div className="avatar"></div>
@@ -13,6 +17,7 @@ function About(){
                 <p className="paragraph3">Connect with me to chat about it in details!</p>
             </div>
         </main>
+        </>
     )
 }
 

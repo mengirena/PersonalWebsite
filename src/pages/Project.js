@@ -1,9 +1,12 @@
 import React from "react"
 import Card from "../components/Card"
+import { Link } from 'react-router-dom'
 import './Project.css'
 
 function Projects(){
     return(
+        <>
+        <Link to="/"><i className="fas fa-moon logo"></i></Link>
         <main>
             <div className="container-project">
                 <h1 className="name">Businesses I've helped</h1>
@@ -32,6 +35,7 @@ function Projects(){
                 </div>
             </div>
         </main>
+        </>
     )
 }
 
