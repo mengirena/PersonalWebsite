@@ -16,7 +16,7 @@ function Irena(){
         irena.style.top = "40vh"
         irena.style.left = `${(window.innerWidth-251)/2}px`
         irena.style["line-height"] = "6rem"
-        navBar.style.background = "var(--clr-primary)"
+        // navBar.style.background = "var(--clr-primary)"
     }
 
     function moveLetters() {
@@ -36,8 +36,8 @@ function Irena(){
         letterGroupC.style.top = "0%"
     }
 
-
     const [dimensions, setDimensions] = useState({width:window.innerWidth,height:window.innerHeight})
+    const [isOpaque, setOpacity] = useState({opaque:true})
 
     useEffect(()=>{
         window.addEventListener("resize", () => setDimensions({width:window.innerWidth,height:window.innerHeight}))
