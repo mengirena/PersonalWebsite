@@ -52,7 +52,7 @@ body {
     color: var(--clr-egg);
     display:block;
     position:absolute;
-    top: 4vh;
+    top: 6vh;
     left: 11vw;
     opacity: .8;
 }

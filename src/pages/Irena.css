@@ -50,6 +50,7 @@ span {
     border-bottom: 2.5px solid var(--clr-light);
     border-top: 2.5px solid var(--clr-light);
     transition: top 4s, height 4.5s;
+    z-index:99;
 }
 
 .frame2 {
@@ -57,4 +58,6 @@ span {
     top: 0;
     left: 8%;
     transition: opacity 6s ease-in, left 8s;
+    z-index:99;
+
 }
