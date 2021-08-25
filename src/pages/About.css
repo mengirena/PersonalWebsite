@@ -27,7 +27,7 @@ main {
     padding-bottom: 5px;
     height: 81vh;
     margin: 9vh auto 0;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .avatar {
