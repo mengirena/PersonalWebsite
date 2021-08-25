@@ -16,7 +16,7 @@ main {
     height: 81vh;
     margin: 9vh auto 0;
     -webkit-overflow-scrolling: touch;
-    overflow-y: scroll;
+    overflow: scroll;
 
 }
 
