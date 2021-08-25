@@ -17,8 +17,8 @@
     --grid-about-col: 30% 70%;
     --grid-about-row: repeat(11, 1fr);
     --grid-about-mo-col: 70% 30%;
+    --grid-about-mo-row: 18% 9% 73%;
 
-    
 }
 
 h1, h2, h3, h4, h5, h6 {
