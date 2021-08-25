@@ -93,13 +93,16 @@ main {
     
     .paragraph1 {
         grid-row: 4 / 7;
+        line-height: 1.4;
     }
     
     .paragraph2 {
         grid-row: 7 / 10;
+        line-height: 1.4;
     }
     
     .paragraph3 {
         grid-row: 10 / 11;
+        line-height: 1.4;
     }
 }
