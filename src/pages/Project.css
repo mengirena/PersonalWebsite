@@ -42,7 +42,7 @@
     transition: transform .3s linear;
 }
 
-.card-item-link:hover {
+.card-item-link:hover, .card-item-link:focus {
     transform: scale(1.08);
     border-top-left-radius: 8px;
 }
