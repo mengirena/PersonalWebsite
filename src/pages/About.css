@@ -24,7 +24,7 @@ main {
 .container {
     width: 70vw;
     max-width: 1000px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     height: 81vh;
     margin: 9vh auto 0;
     overflow-y: scroll;
