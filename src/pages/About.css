@@ -12,9 +12,9 @@ main {
 .container {
     width: 70vw;
     max-width: 1000px;
-    padding-bottom: 10px;
     height: 81vh;
     margin: 9vh auto 0;
+    padding-bottom: 5vh;
     -webkit-overflow-scrolling: touch;
     overflow: scroll;
 
