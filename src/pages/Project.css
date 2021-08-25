@@ -3,6 +3,7 @@
     max-width: 1000px;
     height: 80vh;
     margin: 9vh auto 0;
+    padding-bottom: 5vh;
     -webkit-overflow-scrolling: touch;
     overflow:scroll;
 }
@@ -39,11 +40,11 @@
     filter: drop-shadow(0 3px 10px rgba(255, 226, 183, 0.017));
     border-radius: 8px;
     overflow: hidden;
-    transition: transform .3s linear;
+    transition: transform .2s linear;
 }
 
 .card-item-link:hover, .card-item-link:focus {
-    transform: scale(1.08);
+    transform: scale(1.05);
     border-top-left-radius: 8px;
 }
 
