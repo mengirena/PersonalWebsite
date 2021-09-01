@@ -26,3 +26,11 @@ input:focus::placeholder,textarea:focus::placeholder {
     visibility: hidden;
 }
 ```
+
+### Page Not Found on Netlify with React Router
+
+Add a `_redirects` file with code
+
+`/*    /index.html   200`
+
+https://dev.to/dance2die/page-not-found-on-netlify-with-react-router-58mc

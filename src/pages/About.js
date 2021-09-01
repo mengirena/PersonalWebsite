@@ -1,4 +1,3 @@
-import React from "react"
 import './About.css'
 import { Link } from 'react-router-dom'
 
@@ -12,7 +11,7 @@ function About(){
                 <div className="avatar"></div>
                 <div className="right-col-top">
                     <h1 className="name">Irena C</h1>
-                    <h2 className="role">Full Stack Web Developer</h2>
+                    <h2 className="role">Full-Stack Freelancers</h2>
                 </div>
                 <div className="right-col-bot">
                     <p className="paragraph1">I’m a full stack web developer devoting in helping small businesses to create the digital presence of their product/service and optimize work efficiency.</p>
