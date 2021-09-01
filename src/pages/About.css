@@ -16,11 +16,12 @@ main {
     margin: 9vh auto 0;
     padding-bottom: 5vh;
     -webkit-overflow-scrolling: touch;
+    overflow: scroll;
     overflow-x: visible;
     
 }
 
-@media screen and (max-height:600px) {
+/* @media screen and (max-height:600px) {
 
     .container {
         overflow: scroll;
@@ -36,9 +37,10 @@ main {
     
     .container::-webkit-scrollbar-thumb {
         background-color: rgba(150, 116, 124, 0.466);
-        /* outline: 1px solid slategrey; */
+        outline: 1px solid slategrey;
     }
-}
+} 
+*/
 
 
 .avatar {
