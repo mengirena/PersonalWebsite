@@ -5,9 +5,28 @@
     margin: 9vh auto 0;
     padding-bottom: 11vh;
     -webkit-overflow-scrolling: touch;
-    overflow:scroll;
     overflow-x: visible;
 
+}
+
+@media screen and (max-height:600px) {
+
+    .container-project {
+        overflow: scroll;
+    }
+
+    .container-project::-webkit-scrollbar {
+        width: .5em;
+    }
+    
+    .container-project::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 4px var(--clr-primary);
+    }
+    
+    .container-project::-webkit-scrollbar-thumb {
+        background-color: rgba(150, 116, 124, 0.466);
+        outline: 1px solid slategrey;
+    }
 }
 
 .container-project > h1 {
