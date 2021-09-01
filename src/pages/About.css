@@ -15,9 +15,10 @@ main {
     height: 81vh;
     margin: 9vh auto 0;
     padding-bottom: 5vh;
-    -webkit-overflow-scrolling: touch;
     overflow: scroll;
-
+    -webkit-overflow-scrolling: touch;
+    overflow-x: visible;
+    
 }
 
 .avatar {

@@ -6,6 +6,8 @@
     padding-bottom: 11vh;
     -webkit-overflow-scrolling: touch;
     overflow:scroll;
+    overflow-x: visible;
+
 }
 
 .container-project > h1 {
