@@ -13,19 +13,19 @@ function Projects(){
                     <ul className="cards">
                         <Card 
                             url="https://travelfunservice.netlify.app"
-                            imgDir= "https://res.cloudinary.com/dlw84bbw6/image/upload/v1630528279/Personal%20Website/travel-fun_shhame.png"
+                            imgDir= "/images/travel-fun.png"
                             subtitle="Traveling Service Landing page"
                             content=""
                         />
                         <Card 
                             url="https://mountainrecreation.netlify.app"
-                            imgDir= "https://res.cloudinary.com/dlw84bbw6/image/upload/v1630528277/Personal%20Website/mountain-recreation_ldqprn.png"
+                            imgDir= "/images/mountain-recreation.png"
                             subtitle="Mountain recreation Landing page"
                             content=""
                         />
                         <Card 
                             url="https://sneaker-sales.netlify.app"
-                            imgDir= "https://res.cloudinary.com/dlw84bbw6/image/upload/v1630528279/Personal%20Website/sneaker-landing_bufp1y.png"
+                            imgDir= "/images/sneaker-landing.png"
                             subtitle="Sneaker Sales Landing page"
                             content=""
                         />
